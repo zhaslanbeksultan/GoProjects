@@ -1,4 +1,4 @@
-module tsis1-project
+module github.com/zhaslanbeksultan/GoProjects/tsis1
 
 go 1.21.6
 

@@ -8,7 +8,7 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/zhaslanbeksultan/GoProjects/tsis1/pkg/models"
-	"github.com/zhaslanbeksultan/GoProjects/tsis1/ui/html"
+	"github.com/zhaslanbeksultan/GoProjects/tsis1/ui"
 )
 
 func WelcomeHandler(w http.ResponseWriter, r *http.Request) {

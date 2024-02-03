@@ -10,5 +10,8 @@ import (
 func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/barca", handlers.WelcomeHandler)
+	r.HandleFunc("/barca/health", handlers.HealthCheck).Methods("GET")
+	r.HandleFunc("/barca/all", handlers.PrintAllPlayers).Methods("GET")
+	r.HandleFunc("/barca/{name}", handlers.GetPlayerByName).Methods("GET")
 	http.ListenAndServe(":5500", r)
 }
